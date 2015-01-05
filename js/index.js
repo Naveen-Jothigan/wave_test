@@ -58,11 +58,11 @@ var app = {
 
         scanner.scan( function (result) { 
 
-            alert("We got a barcode\n" + 
-            "Result: " + result.text + "\n" + 
-            "Format: " + result.format + "\n" + 
-            "Cancelled: " + result.cancelled);  
-
+           //alert("We got a barcode\n" + 
+           // "Result: " + result.text + "\n" + 
+           // "Format: " + result.format + "\n" + 
+           // "Cancelled: " + result.cancelled);  
+        window.open('http://appnlogic.com/wave/app/overview.php?qrcode=ST118-1', '_blank', 'location=yes');
            console.log("Scanner result: \n" +
                 "text: " + result.text + "\n" +
                 "format: " + result.format + "\n" +
